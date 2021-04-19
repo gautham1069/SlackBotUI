@@ -53,10 +53,12 @@ def post_install():
     access_token = response['access_token']
     print(access_token)
     # Save the bot token to an environmental variable or to your data store
-    with open(".env", "a") as f:
-        f.write("\n")
-        f.write(team['name']+"="+access_token)
-        f.write("\n")
+    # with open(".env", "a") as f:
+    #     f.write("\n")
+    #     f.write(team['name']+"="+access_token)
+    #     f.write("\n")
+
+    return "Bot is added to your workspace, please add to the channel as well. Team name: " + team['name]'] + " and token: " + access_token
 
     # Don't forget to let the user know that auth has succeeded!
     return "Auth complete!"
