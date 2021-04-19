@@ -61,4 +61,4 @@ def post_install():
     return "Bot is added to your workspace, please add to the channel as well. Team name: " + team['name]'] + " and token: " + access_token
 
     # Don't forget to let the user know that auth has succeeded!
-    return "Auth complete!"
+    # return "Auth complete!"
