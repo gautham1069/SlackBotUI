@@ -12,6 +12,10 @@ from dotenv import load_dotenv
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
+@app.route("/")
+def index():
+    return "Welcome to home page!"
+
 # Route to kick off Oauth flow
 @app.route("/begin_auth", methods=["GET"])
 def pre_install():
